@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter Project 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Scripts for Containers -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <!-- Scripts for Toggle -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark align-items-center"
+    >
+      <a class="navbar-brand" href="#">Date Converter</a>
+    </nav>
+    <br /><br /><br />
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Julian Date Converter</h4>
+          </div>
+
+          
+          <div class="material-switch pull-right">
+            <label>Julian to Calendar</label>
+            <input
+              id="someSwitchOptionDefault"
+              name="someSwitchOption001"
+              type="checkbox"
+            />
+            <label>Calendar to Julian</label>  
+          </div>
+
+          <div class="card-body">
+            <label>Enter the Julian Date</label><br /><br />
+            <input type="text" name="julianDate" id="julianDate" /> <br /><br />
+            <br />
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark">
+              Convert
+            </button>
+            <br /><br />
+            <input type="text" name="outputDate" id="outputDate" />
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">
+              Multiple Julian Date Converter
+            </h4>
+          </div>
+          <div class="card-body">
+            <label>Enter the Calendar Date</label><br /><br />
+            <input type="text" name="julianDate" id="julianDate" /> <br /><br />
+            <br />
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark">
+              Convert
+            </button>
+            <br /><br />
+            <input type="text" name="outputDate" id="outputDate" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  </body>
+</html>
