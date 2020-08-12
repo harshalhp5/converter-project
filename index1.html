@@ -47,24 +47,38 @@
 
           
           <div class="material-switch pull-right">
-            <label>Julian to Calendar</label>
+            <br>
+            <!-- <label>Julian to Calendar</label> -->
             <input
-              id="someSwitchOptionDefault"
-              name="someSwitchOption001"
+              id="toggleBtn"
+              name="toggleBtn"
               type="checkbox"
+              unchecked
+              data-onstyle="danger"
+              data-on="Click to convert Julian to Calendar"
+              data-offstyle="success"
+              data-off="Click to convert Calendar to Julian"
+              data-toggle="toggle"
+              onclick="toggleFunction()"
+              data-width="250"
             />
-            <label>Calendar to Julian</label>  
+            
           </div>
 
           <div class="card-body">
-            <label>Enter the Julian Date</label><br /><br />
+            <label for="julianDate">Enter the Julian Date here :</label>
             <input type="text" name="julianDate" id="julianDate" /> <br /><br />
             <br />
-            <button type="button" class="btn btn-lg btn-block btn-outline-dark">
+            <button type="button" 
+            class="btn btn-lg btn-block  btn-dark btn-text-lg" 
+            data-width="100px" 
+            id="convertJtoS" 
+            onclick="jdettosimple()">
               Convert
             </button>
             <br /><br />
-            <input type="text" name="outputDate" id="outputDate" />
+            <label>The Calendar Date is :</label>
+            <input type="text" name="simpleDateConverted" id="simpleDateConverted" />
           </div>
         </div>
         <div class="card mb-4 shadow-sm">
@@ -87,5 +101,8 @@
       </div>
     </div>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="scripts/jdeToCal.js"></script>
+    
   </body>
 </html>
+
