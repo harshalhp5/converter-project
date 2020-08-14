@@ -25,49 +25,70 @@
       href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
-
   </head>
 
   <body>
     <nav
       class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark align-items-center"
     >
-      <a class="navbar-brand" href="#">Date Converter</a>
+      <a class="navbar-brand" href="#">Julian JDE Date Converter</a>
     </nav>
-    <br /><br /><br />
+    <br /><br />
     <div class="container">
-      <div class="card-deck mb-3 text-center">
+      <div class="card-deck mb-4">
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Julian Date Converter</h4>
+            <h4 class="my-0 font-weight-normal">Julian Date</h4>
           </div>
 
-          
           <div class="material-switch pull-right">
-            <br>
+            <br />
           </div>
 
           <div class="card-body">
-            <label for="julianDate">Enter the Julian Date here :</label>
-            <input type="text" name="julianDate" id="julianDate" /> <br /><br />
-            <br />
-            <button type="button" 
-            class="btn btn-lg btn-block  btn-dark btn-text-lg" 
-            data-width="100px" 
-            id="convertJtoS" 
-            onclick="jdetosimple()">
-              Convert
-            </button>
-            <br /><br />
-            <label>The Calendar Date is :</label>
-            <input type="text" id="simpleDateConverted" />
+            <label for="julianDate">Julian Date :</label><br />
+            <input type="text" name="julianDate" id="julianDate" />
           </div>
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="card-deck mb-3">
+        <div class="card mb-4 shadow-sm">
+          <button
+            type="button"
+            class="btn btn-md btn-dark btn-text-lg"
+            id="convertJtoS"
+            onclick="jdetosimple()"
+            style="size: 100px;"
+          >
+            Convert
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <div class="card-deck mb-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Calendar Date</h4>
+            </div>
+  
+            <div class="material-switch pull-right">
+              <br />
+            </div>
+  
+            <div class="card-body">
+              <label for="julianDate">Calendar Date :</label><br />
+              <input type="text" name="julianDate" id="simpleDateConverted" />
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <script src="scripts/jdeToCal.js"></script>
-    
   </body>
 </html>
-

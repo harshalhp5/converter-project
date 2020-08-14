@@ -1,4 +1,4 @@
-.material-switch > input[type="checkbox"] {
+ .material-switch > input[type="checkbox"] {
     display: none;   
 }
 
@@ -41,4 +41,22 @@
 .material-switch > input[type="checkbox"]:checked + label::after {
     background: inherit;
     left: 20px;
-} 
+}  
+
+.card-body {
+    display: inline-block;
+    width: auto;
+    text-align-last: left;
+}
+
+.btn btn-lg {
+    display: inline;
+    width: auto;
+    align-content: center;
+}
+
+.body-right {
+    display: inline-block;
+    width: auto;
+    text-align-last: r;
+}
